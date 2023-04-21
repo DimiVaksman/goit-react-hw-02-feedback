@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import {Layout} from './Layout/Layout'
 import { Statistics } from 'components/Statistics/Statistics';
 import { FeedbackOptions } from 'components/FeedbackOptions/FeedbackOptions';
 import { Section } from './section/section'
@@ -21,7 +22,7 @@ export class App extends Component {
   };
   render() {
     return (
-<div>
+<Layout>
 <Section title='Please leave feedback'>
         <FeedbackOptions
           options={Object.keys(this.state)}
@@ -37,7 +38,7 @@ export class App extends Component {
           positiveFeedback={this.countPositiveFeedbackPercentage(this.state)}
         />
       </Section>
-</div>
+</Layout>
     );
   }
 }

@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Buttons, ButtonItem, ButtonStyled } from "./Feedbacloptions.styled";
 
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
-    <div>
+    <Buttons>
       {options.map(option => {
         return (
-          <li key={option}>
-            <button
+          <ButtonItem key={option}>
+            <ButtonStyled
               key={option}
               type="button"
               value={option}
@@ -15,11 +16,11 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
               onClick={() => onLeaveFeedback(option)}
             >
               {option}
-            </button>
-          </li>
+            </ButtonStyled>
+          </ButtonItem>
         );
       })}
-    </div>
+    </Buttons>
   );
 };
 
