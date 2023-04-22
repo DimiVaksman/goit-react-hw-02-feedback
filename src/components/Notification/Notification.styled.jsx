@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Message = styled.p`
 text-align: center;
-margin-top: 40px;
+margin-top: 80px;
 font-size: 28px;
 font-weight: bold;
 color: #ffbc9c;
