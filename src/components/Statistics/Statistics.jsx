@@ -13,7 +13,7 @@ import {
   PositiveFeedbackStyled,
   PostFeedbNumber
 } from './Statistics.styled';
-import { FcLike, FcNeutralDecision, FcDislike } from 'react-icons/fc';
+import { FcLike, FcNeutralDecision } from 'react-icons/fc';
 import { AiFillDislike } from 'react-icons/ai';
 
 export const Statistics = ({
